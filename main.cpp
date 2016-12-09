@@ -247,6 +247,7 @@ int main(int argc, char* args[])
             rect_character.y <= 93  || rect_character.y >= 456) && game)
         {
             cant = 0;
+            countSnakeEat();
             SDL_RenderCopy(renderer, gameover, NULL, &rect_gameover);
             game = false;
         }
